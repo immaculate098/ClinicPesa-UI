@@ -8,8 +8,8 @@ export default function ClinicPesaDashboard() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
       {/* Header */}
-      <header className="bg-gradient-to-r from-[#084C6C] to-[#0B6C94] text-white px-4 py-8  shadow-lg">
-        <div className="flex items-center justify-between max-w-md mx-auto">
+      <header className="bg-gradient-to-r from-[#084C6C] to-[#0B6C94] text-white px-4 py-8 shadow-lg">
+        <div className="flex items-center justify-between max-w-md md:max-w-4xl lg:max-w-6xl mx-auto">
           <button className="p-2 hover:bg-teal-600 rounded-lg transition">
             <ChevronLeft size={24} className="text-yellow-300" />
           </button>
@@ -26,7 +26,7 @@ export default function ClinicPesaDashboard() {
       </header>
 
       {/* Main Content */}
-      <main className="max-w-md mx-auto px-4 pb-8">
+      <main className=" mx-auto px-4 md:px-8 lg:px-12 pb-8">
         {/* Greeting */}
         {/* <div className="text-center mt-6 mb-4">
           <h2 className="text-xl font-semibold text-gray-800">Good Morning, Robert</h2>
@@ -126,7 +126,7 @@ export default function ClinicPesaDashboard() {
         </div>
 
         {/* Action Cards Grid */}
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
           <button className="bg-white rounded-2xl shadow-md p-6 flex flex-col items-center gap-3 hover:shadow-lg transition border border-gray-100">
             <div className="w-12 h-12 bg-teal-50 rounded-full flex items-center justify-center">
               <Receipt size={24} className="text-[#084C6C]" />
